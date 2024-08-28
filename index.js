@@ -63,7 +63,7 @@ function mainSlider(sliderContainer) {
     dot.addEventListener("click", () => showSlide(index));
   });
 
-  // setInterval(nextSlide, 4000); // Change slide every 4 seconds
+  setInterval(nextSlide, 4000); // Change slide every 4 seconds
 
   showSlide(currentSlide);
 }
