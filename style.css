@@ -1890,6 +1890,10 @@ iframe {
     font-size: 1.8rem !important;
   }
 
+  .course-container{
+    width: 90%;
+  }
+
   .course-subhead {
     width: 85%;
     text-align: center;
