@@ -7,7 +7,7 @@
     <title>AMT Global</title>
 
     <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/@iconify/iconify@2.1.2/dist/iconify.min.js"></script>
     <link
       rel="stylesheet"
@@ -17,12 +17,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Loader  start-->
+    <div id="loader-container">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Loader  end-->
+
     <!-- Navbar start -->
     <nav class="navbar">
       <div class="logo">
-        <img src="./assets/logo.png" alt="AMT Global Logo" />
+        <img
+          data-aos="fade-down"
+          src="./assets/logo.png"
+          alt="AMT Global Logo"
+        />
       </div>
-      <ul class="nav-links" onclick="toggleMenu()">
+      <ul
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        class="nav-links"
+        onclick="toggleMenu()"
+      >
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#">Courses</a></li>
         <li><a href="#">Products</a></li>
@@ -134,19 +150,21 @@
     <!-- Connect and Discover section start -->
     <section class="connect-container">
       <div class="connect-wrapper">
-        <h2 class="connect-heading">Click to Stay connected with us</h2>
+        <h2 data-aos="fade-down" class="connect-heading">
+          Click to Stay connected with us
+        </h2>
         <div class="connect-icons-wrapper">
-          <a href="" target="_blank">
+          <a data-aos="fade-down" href="" target="_blank">
             <span class="iconify" data-icon="logos:telegram"></span>
           </a>
-          <a href="" target="_blank">
+          <a data-aos="fade-up" href="" target="_blank">
             <span class="iconify" data-icon="logos:youtube-icon"></span>
           </a>
 
-          <a href="" target="_blank">
+          <a data-aos="fade-down" href="" target="_blank">
             <span class="iconify" data-icon="skill-icons:instagram"></span>
           </a>
-          <a href="" target="_blank">
+          <a data-aos="fade-up" href="" target="_blank">
             <span class="iconify" data-icon="logos:whatsapp-icon"></span>
           </a>
         </div>
@@ -155,7 +173,7 @@
         <h2 class="discover-heading">What are you going to discover?</h2>
 
         <div class="discover-content">
-          <div class="discover-content-left">
+          <div class="discover-content-left" data-aos="fade-right">
             <div class="discover-content-para">
               <span>></span>
               <p class="discover-para-p">Stop loss hunting concept</p>
@@ -169,7 +187,7 @@
               <p class="discover-para-p">Reverse Psychology</p>
             </div>
           </div>
-          <div class="discover-content-left">
+          <div class="discover-content-left" data-aos="fade-left">
             <div class="discover-content-para">
               <span>></span>
               <p class="discover-para-p">
@@ -199,10 +217,10 @@
 
     <!-- Upcoming Seminar Section Start -->
     <section class="upc-seminars">
-      <h2 class="upc-head">Upcoming Seminars</h2>
+      <h2 class="upc-head" data-aos="fade-in">Upcoming Seminars</h2>
 
       <div class="upc-content-wrapper">
-        <div class="upc-content-card">
+        <div class="upc-content-card" data-aos="fade-up">
           <h4 class="upc-content-card-title">Pune</h4>
           <figure class="upc-content-card-img">
             <img src="./assets/cardPune.png" alt="Pune-event" />
@@ -217,7 +235,7 @@
             <button class="upc-content-button">Book Now</button>
           </div>
         </div>
-        <div class="upc-content-card">
+        <div class="upc-content-card" data-aos="fade-down">
           <h4 class="upc-content-card-title">Mumbai</h4>
           <figure class="upc-content-card-img">
             <img src="./assets/cardMumbai.png" alt="Pune-event" />
@@ -234,7 +252,7 @@
             <button class="upc-content-button">Book Now</button>
           </div>
         </div>
-        <div class="upc-content-card">
+        <div class="upc-content-card" data-aos="fade-up">
           <h4 class="upc-content-card-title">Pandharpur</h4>
           <figure class="upc-content-card-img">
             <img src="./assets/pandharpur.png" alt="Pune-event" />
@@ -256,7 +274,7 @@
     <!-- About Section Start -->
     <section class="about-section">
       <div class="about-container">
-        <div class="about-col-1 col-1">
+        <div class="about-col-1 col-1" data-aos="fade-up-right">
           <figure class="about-img1-div">
             <img
               src="./assets/abhishekh.png"
@@ -282,7 +300,7 @@
             <button class="know-more-btn">Know More</button>
           </div>
         </div>
-        <div class="about-col-1 col-reverse">
+        <div class="about-col-1 col-reverse" data-aos="fade-up-left">
           <figure class="about-img1-div">
             <img
               src="./assets/Mahesh.png"
@@ -316,27 +334,27 @@
       <div class="team-container">
         <h2 class="team-heading">Our Team</h2>
         <div class="team-wrapper">
-          <div class="team-wrap-card">
+          <div class="team-wrap-card" data-aos="fade-up-left">
             <img src="./assets/ashirwad.png" alt="Ashirwad" />
             <p class="team-card-post">Marketing <br />Head</p>
             <h5 class="team-card-name">Ashirwad</h5>
           </div>
-          <div class="team-wrap-card">
+          <div class="team-wrap-card" data-aos="fade-up-left">
             <img src="./assets/Poonam.png" alt="Poonam" />
             <p class="team-card-post">Technical <br />Analyst</p>
             <h5 class="team-card-name">Poonam</h5>
           </div>
-          <div class="team-wrap-card">
+          <div class="team-wrap-card" data-aos="fade-up">
             <img src="./assets/Ashwini.png" alt="Ashwini" />
             <p class="team-card-post">Finance <br />Manager</p>
             <h5 class="team-card-name">Ashwini</h5>
           </div>
-          <div class="team-wrap-card">
+          <div class="team-wrap-card" data-aos="fade-up-right">
             <img src="./assets/Shubham.png" alt="Shubham" />
             <p class="team-card-post">Technical <br />Support</p>
             <h5 class="team-card-name">Shubham</h5>
           </div>
-          <div class="team-wrap-card">
+          <div class="team-wrap-card" data-aos="fade-up-right">
             <img src="./assets/Rakesh.png" alt="Rakesh" />
             <p class="team-card-post">Public <br />Relation</p>
             <h5 class="team-card-name">Rakesh</h5>
@@ -350,11 +368,11 @@
     <section class="why-amt">
       <div class="why-amt-container">
         <div class="why-amt-left">
-          <figure class="why-amt-img-wrap">
+          <figure class="why-amt-img-wrap" data-aos="fade-right">
             <img src="./assets/why-amt.jpg" alt="Why-amt-image" />
           </figure>
         </div>
-        <div class="why-amt-right">
+        <div class="why-amt-right" data-aos="fade-left">
           <h2 class="team-heading text-left">Why AMT Global ?</h2>
           <p class="why-amt-right-content">
             Our main agenda is to create a good source of income for all the
@@ -373,7 +391,7 @@
       </div>
 
       <div class="blue-mask-wrapper">
-        <p class="blue-mask-p">
+        <p class="blue-mask-p" data-aos="fade-up">
           We just want you to learn at your own pace and convenience, which is
           why we provide the curriculum in both online and offline modes—each
           with advantages!
@@ -583,7 +601,12 @@
     </footer>
 
     <!-- Footer End -->
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+      });
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.js"
       integrity="sha512-vX/u24VoVNEFnY4hejf35cn0a3id3sciX/7WHtSO0DjjeViFQI0OgpGdQykHTjW+IKpLRDN6jWwvnGX98QiRIA=="

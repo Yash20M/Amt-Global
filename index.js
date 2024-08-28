@@ -1,3 +1,14 @@
+function loader() {
+  window.addEventListener("load", function () {
+    const loaderContainer = document.getElementById("loader-container");
+
+    setTimeout(() => {
+      loaderContainer.remove();
+    }, 4000); // Adjust the timeout to match the total animation duration
+  });
+}
+loader();
+
 let lastScrollTop = 0;
 let isScrolling;
 

@@ -29,6 +29,66 @@ a {
   text-align: left !important;
 }
 
+section {
+  overflow: hidden;
+}
+
+/* Loader Start */
+
+#loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: transparent;
+  border: 5px solid var(--primary-color);
+  border-top: 5px solid transparent;
+  animation: spin 2s linear infinite, fillUp 3s ease-out forwards,
+    scaleUp 1s ease-out 2s forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fillUp {
+  0% {
+    background: transparent;
+  }
+  100% {
+    background: var(--primary-color);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(100);
+    opacity: 0;
+  }
+}
+
+/* Loader End */
+
 /* Navbar style start */
 .navbar {
   display: flex;
@@ -148,6 +208,8 @@ a {
 }
 
 .slides {
+  width: 100%;
+  height: 100%;
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
@@ -465,6 +527,12 @@ iconify-icon {
   box-shadow: 0 0 20px 0 #000000;
   padding: 1rem 1.5rem;
   margin-bottom: 2rem;
+  transition: all 0.5 ease;
+}
+
+.upc-content-card:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0px 0px 25px grey;
 }
 
 .upc-pink {
@@ -781,6 +849,12 @@ iconify-icon {
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+  transition: all 0.2 ease-in-out;
+}
+
+.team-wrap-card:hover {
+  transform: skew(100) !important;
+  transform: scale(1.05) !important;
 }
 
 .team-card-post {
@@ -1226,7 +1300,7 @@ iconify-icon {
     width: 100%;
     max-height: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #0000009c;
     position: absolute;
     top: 100%;
     left: 0;
@@ -1242,6 +1316,16 @@ iconify-icon {
   .nav-links.active {
     display: flex;
     max-height: 500px;
+    animation: list 0.2s ease-in-out;
+  }
+
+  @keyframes list {
+    0% {
+      max-height: 0;
+    }
+    100% {
+      max-height: 500px;
+    }
   }
 
   .nav-links {
@@ -1643,6 +1727,7 @@ iconify-icon {
 
   .upc-content-card {
     width: 80%;
+    height: 500px;
   }
 
   .upc-content-card-img {
