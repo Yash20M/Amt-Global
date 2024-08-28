@@ -35,58 +35,6 @@ section {
 
 /* Loader Start */
 
-#loader-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  z-index: 1000;
-}
-
-.loader {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: transparent;
-  border: 5px solid var(--primary-color);
-  border-top: 5px solid transparent;
-  animation: spin 2s linear infinite, fillUp 3s ease-out forwards,
-    scaleUp 1s ease-out 2s forwards;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes fillUp {
-  0% {
-    background: transparent;
-  }
-  100% {
-    background: var(--primary-color);
-  }
-}
-
-@keyframes scaleUp {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(100);
-    opacity: 0;
-  }
-}
-
 /* Loader End */
 
 /* Navbar style start */
@@ -168,8 +116,13 @@ section {
   width: 100%;
 }
 
+.nav-links a.active {
+  color: #1e90ff;
+}
+
 .nav-links a.active::after {
   width: 100%;
+  color: #1e90ff;
 }
 
 .nav-links a:hover {
@@ -190,8 +143,8 @@ section {
   margin: 3px 0;
   transition: all 0.3s ease;
 }
-
 /* Navbar style end */
+/*  ******************* Home Page Start **************************** */
 
 /* Slider section start */
 
@@ -1231,10 +1184,132 @@ iconify-icon {
   margin: 0;
   font-size: 0.9rem;
 }
-
-/* Responsive Design */
-
 /* Footer end */
+/*  ******************* Home Page Start **************************** */
+
+/* ***********Courses Page Code Start */
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.course-section {
+  width: 100%;
+  height: auto;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.course-container {
+  /* border: 2px solid aqua; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  width: 25rem;
+  height: 15rem;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  /* background-color: #f0f0f0; */
+}
+
+.course-card iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.yt-loader {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 15px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.course-subhead-wrap {
+  font-size: 24px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin: 3rem 0;
+}
+
+.course-subhead {
+  width: 50%;
+  text-align: center;
+}
+
+#view-more-vid {
+  margin-top: 3rem;
+}
+
+/* Thought section  start*/
+.thought-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thought-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* flex-wrap: wrap; */
+  margin-top: 2rem;
+  gap: 3.5rem;
+  width: 80%;
+}
+
+.thought-wrapper {
+  width: 50%;
+  margin-bottom: 3rem;
+  /* border: 2px solid red; */
+}
+
+.thought-head {
+  font-size: 2.5rem;
+}
+
+.thought-subhead {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  text-align: end;
+  font-weight: 600;
+  color: var(--primary-color);
+  padding-right: 2rem;
+}
+
+.thought-img {
+  height: 90%;
+  object-fit: cover;
+}
+/* Thought section  end*/
+
+/* ***********Courses Page Code End */
 
 /* Responsive Design */
 
@@ -1283,7 +1358,7 @@ iconify-icon {
 }
 
 /* Mobile and Tablet View */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .navbar {
     flex-direction: row;
     justify-content: space-between;
@@ -1525,6 +1600,20 @@ iconify-icon {
   .about-col-1 .about-img-1 {
     width: 50%;
   }
+
+  .thought-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thought-wrapper {
+    width: 100%;
+  }
+
+  .course-subhead {
+    width: 75%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1747,5 +1836,24 @@ iconify-icon {
 
   .regi_h2 {
     font-size: 1.8rem !important;
+  }
+
+  .course-subhead {
+    width: 85%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .thought-head {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .thought-img {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
   }
 }
