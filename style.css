@@ -1661,6 +1661,14 @@ iframe {
 }
 
 @media (max-width: 480px) {
+  .textWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    font-size: 1.2rem;
+  }
   .navbar {
     padding: 0.5rem 1.5rem;
     height: 80px;
