@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Wait for 2.5 seconds before hiding the loader
+  setTimeout(function () {
+    document.querySelector(".initial-loader").style.display = "none";
+    document.body.classList.remove("loading");
+  }, 2500); // 2500 milliseconds = 2.5 seconds
+});
+
+// Ensure the body has the loading class by default
+document.body.classList.add("loading");
+
 let lastScrollTop = 0;
 let isScrolling;
 
