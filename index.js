@@ -161,4 +161,5 @@ function testimonials() {
     swiper.update();
   }
 }
+
 testimonials();
