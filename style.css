@@ -2529,11 +2529,12 @@ html {
     width: 100%;
   }
 
-  .faq-question ,  .faq-answer{
-    font-size:1rem;
+  .faq-question,
+  .faq-answer {
+    font-size: 1rem;
   }
 
-  .contact-section{
-    padding-bottom: .5rem;
+  .contact-section {
+    padding-bottom: 0.5rem;
   }
 }
