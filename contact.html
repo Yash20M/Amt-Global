@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets//logo.png" type="image/x-icon" />
-    <title>AMT Global | Products</title>
+    <title>AMT Global | Contact</title>
 
     <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Loader  start-->
     <div class="initial-loader">
       <div class="textWrapper">
         <p class="text">Trade Smart, Achieve Big—AMT Global.</p>
@@ -33,11 +35,11 @@
         </a>
       </div>
       <ul class="nav-links" onclick="toggleMenu()">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="/courses.html">Courses</a></li>
-        <li><a href="/products.html" class="active">Products</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="./courses.html">Courses</a></li>
+        <li><a href="/products.html">Products</a></li>
         <li><a href="/about.html">About Us</a></li>
-        <li><a href="/contact.html">Contact Us</a></li>
+        <li><a href="/contact.html" class="active">Contact Us</a></li>
       </ul>
       <div class="hamburger" onclick="toggleMenu()">
         <div class="bar"></div>
@@ -48,23 +50,9 @@
 
     <!-- Navbar end start-->
 
-    <!-- Slider section start -->
-    <section class="slider-container">
+    <!-- Slider section -->
+    <div class="slider-container">
       <div class="slides">
-        <div class="slide">
-          <img src="assets/coinsBG.png" alt="Image 2" class="slide-img-2" />
-          <div class="text-overlay text-overlay-2 right">
-            <h2>
-              "The goal of any good trader is to <br />
-              make the best trades. "Money comes <br />
-              second."
-            </h2>
-            <p>- Abhishek Jamdade</p>
-          </div>
-          <div class="bottom-info bottom-info-2">
-            <img src="assets/Group 82.png" alt="Logo" />
-          </div>
-        </div>
         <div class="slide">
           <img src="assets/bg1.png" alt="Image 1" class="slide-bg-img" />
           <div class="text-overlay text-overlay-1">
@@ -81,6 +69,21 @@
             <p>- Abhishek Jamdade</p>
           </div>
           <div class="bottom-info bottom-info-1">
+            <img src="assets/Group 82.png" alt="Logo" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="assets/coinsBG.png" alt="Image 2" class="slide-img-2" />
+          <div class="text-overlay text-overlay-2 right">
+            <h2>
+              "The goal of any good trader is to <br />
+              make the best trades. "Money comes <br />
+              second."
+            </h2>
+            <p>- Abhishek Jamdade</p>
+          </div>
+          <div class="bottom-info bottom-info-2">
             <img src="assets/Group 82.png" alt="Logo" />
           </div>
         </div>
@@ -152,76 +155,7 @@
         <span class="dot"></span>
         <span class="dot"></span>
       </div>
-    </section>
-    <!-- Slider section End -->
-
-    <div class="invest-container">
-      <h2 class="invest-head">Haven't invested yet?</h2>
-      <p class="invest-subhead">
-        Sign up, start copying any Master Trader, and apply a 50% bonus to your
-        investment profit!
-      </p>
     </div>
-
-    <!-- copy-trading section start -->
-    <section class="copy-trading-section">
-      <h2 class="copy-trading-head">Copy Trading</h2>
-
-      <div class="copy-trading-container">
-        <div class="copy-trading-left-col">
-          <div class="copy-trading-card">
-            <figure class="copy-trading-card-img">
-              <img src="/assets/unlockTrading.png" alt="" />
-            </figure>
-
-            <div class="copy-trading-card-content">
-              <h3 class="copy-trade-h3">Unlock Trading Techniques</h3>
-              <p class="copy-trade-p">
-                Used by the pro, whether you’re new to the market or been
-                trading for a while.
-              </p>
-            </div>
-          </div>
-          <div class="copy-trading-card">
-            <figure class="copy-trading-card-img">
-              <img src="/assets/tradingIdeas.png" alt="" />
-            </figure>
-
-            <div class="copy-trading-card-content">
-              <h3 class="copy-trade-h3">Trading Ideas</h3>
-              <p class="copy-trade-p">
-                Curated by a team of Hedged Experts and pushed to your Hedged
-                Inbox.
-              </p>
-            </div>
-          </div>
-          <div class="copy-trading-card">
-            <figure class="copy-trading-card-img">
-              <img src="/assets/immersiveVideos.png" alt="" />
-            </figure>
-
-            <div class="copy-trading-card-content">
-              <h3 class="copy-trade-h3">Immersive Videos</h3>
-              <p class="copy-trade-p">
-                Learn the techniques on offer by watching professionally
-                created, immersive video content for free.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="copy-trading-right-col">
-          <figure>
-            <img
-              src="/assets/copy-trading.jpg"
-              alt="copy-trading"
-              class="copy-trade-right-img"
-            />
-          </figure>
-          <button class="know-more-btn white-btn ml-0">Open Account</button>
-        </div>
-      </div>
-    </section>
-    <!-- copy-trading section start -->
 
     <!-- Book Trade Image start -->
     <div class="book-trade mt-0">
@@ -238,70 +172,153 @@
     </div>
     <!-- Book Trade Image End -->
 
-    <!-- make Resgiter section start -->
-    <section class="amt-section">
-      <div class="amt-sec-container">
-        <h2 class="invest-head">Copy Trade with AMT Global</h2>
-        <p class="amt-section-description">
-          We offer you a good choice of some of the most well-established copy
-          trading services on our trading app. We also work with third-party
-          programs to provide you with a variety of automated trading solutions.
-          Our AMT Global offer in-platform signals, allowing you to follow trade
-          notifications and pre-set parameters, such as Stop Loss and Take
-          Profit levels based on support and resistance lines, by clicking SELL
-          or BUY.
-        </p>
-      </div>
-      <div class="amt-products">
-        <div class="amt-products-container">
-          <h5 class="amt-products-title">We provide the following products:</h5>
+    <!-- FAQ's section start -->
+    <section class="faq-section">
+      <h2 class="faq-title">F & Q</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">
+            <p class="faq-question-p">
+              1. What Is Copy Trading, And How Does It Work With AMT Global?
+              <span class="faq-icon">+</span>
+            </p>
+          </button>
 
-          <ul class="amt-products-list">
-            <li class="amt-product-item">
-              <figure class="amt-icon">
-                <img src="assets/thumb.png" alt="" />
-              </figure>
-              <p>
-                AMT Global offers a wide range of signal providers to pick from.
-              </p>
-            </li>
-            <li class="amt-product-item">
-              <figure class="amt-icon">
-                <img src="assets/thumb.png" alt="" />
-              </figure>
-              <p>
-                Copy trading with the popular Exness software, which connects
-                straight to your trading account.
-              </p>
-            </li>
-            <li class="amt-product-item">
-              <figure class="amt-icon">
-                <img src="assets/thumb.png" alt="" />
-              </figure>
-              <p>
-                In-platform, live trade alerts on our Telegram and Whatsapp
-                platforms.
-              </p>
-            </li>
-          </ul>
+          <div class="faq-answer">
+            <p>
+              Copy trading allows traders to copy trades of experienced
+              traders...
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="open-wrapper">
-        <h3 class="open-center">
-          Open a Demo account to practice what you've learnt, or a Real account
-          to get started trading right now!
-        </h3>
+        <div class="faq-item">
+          <button class="faq-question">
+            <p class="faq-question-p">
+              2. What Are Trading Signals, And How Can I Use Them?<span
+                class="faq-icon"
+                >+</span
+              >
+            </p>
+          </button>
 
-        <div class="amt-cta-buttons">
-          <button class="know-more-btn ml-0">Register Now</button>
-          <button class="know-more-btn ml-0">Try a Demo</button>
+          <div class="faq-answer">
+            <p>
+              Trading signals are recommendations to buy or sell a security...
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <p class="faq-question-p">
+              3. How Do I Start Copy Trading With AMT Global?<span
+                class="faq-icon"
+                >+</span
+              >
+            </p>
+          </button>
+
+          <div class="faq-answer">
+            <p>
+              To start copy trading, you need to open an account with AMT
+              Global...
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <p class="faq-question-p">
+              4. Are There Any Risks Involved In Copy Trading Or Using Trading
+              Signals?<span class="faq-icon">+</span>
+            </p>
+          </button>
+
+          <div class="faq-answer">
+            <p>
+              Like all forms of trading, copy trading and using trading
+              signals...
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <p class="faq-question-p">
+              5. How Much Does It Cost To Use AMT Global's Copy Trading And
+              Trading Signals Services?<span class="faq-icon">+</span>
+            </p>
+          </button>
+
+          <div class="faq-answer">
+            <p>The cost of using these services varies depending on...</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <p class="faq-question-p">
+              6. Can I Customize The Trades I Copy Or The Signals I
+              Receive?<span class="faq-icon">+</span>
+            </p>
+          </button>
+
+          <div class="faq-answer">
+            <p>
+              Yes, you can customize trades and signals based on your
+              preferences...
+            </p>
+          </div>
         </div>
       </div>
     </section>
+    <!-- FAQ's section end -->
 
-    <!-- make Resgiter section end-->
+    <!-- Contact Us section start -->
 
-    <!-- Footer bottom start -->
+    <section class="contact-section">
+      <div class="contact-form">
+        <h2 class="contact-heading">Contact Us</h2>
+        <form class="form">
+          <div class="input-group">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Enter Your Full Name"
+              required
+            />
+            <input
+              type="tel"
+              class="input-field"
+              placeholder="Enter Your Mobile Number"
+              required
+            />
+            <input
+              type="email"
+              class="input-field"
+              placeholder="Enter Your Email Address"
+              required
+            />
+          </div>
+          <textarea
+            class="textarea-field"
+            placeholder="Description"
+            required
+          ></textarea>
+          <button type="submit" class="know-more-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Us section end -->
+
+    <!-- Testimonials section start -->
+    <section class="reviews-section">
+      <h2 class="team-heading">THIS IS HOW OUR STUDENTS REACT TO US</h2>
+      <div class="reviews-carousel-wrapper">
+        <div id="craouselContainer" class="swiper-container">
+          <div class="swiper-wrapper" id="slideHolder"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials section end -->
+
     <div class="slider-container slider-container-bottom">
       <div class="slides">
         <div class="slide">
@@ -376,7 +393,6 @@
           </div>
         </div>
       </div>
-
       <div class="dots">
         <span class="dot active"></span>
         <span class="dot"></span>
@@ -384,7 +400,6 @@
         <span class="dot"></span>
       </div>
     </div>
-    <!-- Footer bottom end -->
 
     <!-- Footer Start -->
     <footer class="footer">
@@ -441,6 +456,7 @@
       </div>
     </footer>
 
+    <!-- Footer End -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({

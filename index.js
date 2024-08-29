@@ -96,6 +96,35 @@ function ytLoader() {
 }
 ytLoader();
 
+// FAQ's
+document.querySelectorAll(".faq-question").forEach((button) => {
+  button.addEventListener("click", () => {
+    const faqItem = button.parentElement;
+    const faqAnswer = faqItem.querySelector(".faq-answer");
+    const faqIcon = button.querySelector(".faq-icon");
+
+    if (faqAnswer.style.maxHeight) {
+      faqAnswer.style.maxHeight = null;
+      faqAnswer.style.height = null;
+      faqIcon.style.transform = "rotate(0deg)";
+      faqAnswer.style.padding = "0 20px";
+    } else {
+      document.querySelectorAll(".faq-answer").forEach((answer) => {
+        answer.style.maxHeight = null;
+        answer.style.height = null;
+        answer.style.padding = "0 20px";
+      });
+      document.querySelectorAll(".faq-icon").forEach((icon) => {
+        icon.style.transform = "rotate(0deg)";
+      });
+      faqAnswer.style.height = "100%";
+      faqAnswer.style.maxHeight = "100%";
+      faqIcon.style.transform = "rotate(45deg)";
+      faqAnswer.style.padding = "15px 20px";
+    }
+  });
+});
+
 // Testimonial Slider
 function testimonials() {
   let testiomnialData = [
@@ -107,7 +136,7 @@ function testimonials() {
     },
     {
       avatar:
-        "https://img.freepik.com/free-photo/close-up-portrait-young-bearded-man-white-shirt-jacket-posing-camera-with-broad-smile-isolated-gray_171337-629.jpg",
+        "https://img.freepik.com/free-photo/close-up-portrait-young-bearded-man-white-shirt-jacket-posing-camera-with-broad-smile-isolated-gray_171337-629mac.jpg",
       name: "Merilee Beal",
       review:
         "Unbelievable gem! Altered my life. A must-have now. Wholeheartedly advise it to everyone. An absolute game-changer",
