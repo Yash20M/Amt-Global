@@ -91,6 +91,7 @@ function ytLoader() {
       const loader = this.previousElementSibling;
       loader.style.display = "none"; // Hide the skeleton loader
       this.style.display = "block"; // Show the iframe
+      
     };
   });
 }
@@ -185,28 +186,15 @@ function testimonials() {
       el: ".swiper-pagination",
       clickable: true,
     },
-    autoplay: { delay: 20000000 },
+    autoplay: { delay: 2000 },
   });
   window.onresize = queryResizer;
   queryResizer();
   function queryResizer() {
-    if (window.innerWidth >= 1024) {
-      swiper.params.slidesPerView = 5; // Total 5 slides visible
-      swiper.params.centeredSlides = true; // Center the active slide
-      swiper.params.spaceBetween = 20; // Adjust the space between slides (optional)
-    } else if (window.innerWidth >= 724) {
-      swiper.params.slidesPerView = 3.5;
-      swiper.params.centeredSlides = false;
-      swiper.params.spaceBetween = 10; // Adjust the space between slides (optional)
-    } else if (window.innerWidth >= 501) {
-      swiper.params.slidesPerView = 2;
-      swiper.params.centeredSlides = false;
-      swiper.params.spaceBetween = 10; // Adjust the space between slides (optional)
-    } else {
-      swiper.params.slidesPerView = 1;
-      swiper.params.centeredSlides = false;
-      swiper.params.spaceBetween = 10; // Adjust the space between slides (optional)
-    }
+    if (window.innerWidth < 724) swiper.params.slidesPerView = 4;
+    if (window.innerWidth > 501) swiper.params.slidesPerView = 2;
+    if (window.innerWidth > 724) swiper.params.slidesPerView = 3.5;
+    if (window.innerWidth < 501) swiper.params.slidesPerView = 1;
     swiper.update();
   }
 }
