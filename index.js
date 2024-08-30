@@ -74,7 +74,7 @@ function mainSlider(sliderContainer) {
     dot.addEventListener("click", () => showSlide(index));
   });
 
-  setInterval(nextSlide, 4000); // Change slide every 4 seconds
+  // setInterval(nextSlide, 4000); // Change slide every 4 seconds
 
   showSlide(currentSlide);
 }
@@ -155,6 +155,13 @@ function testimonials() {
       review:
         "Amazing product! It changed my life. Can't live without it now. Highly recommended to everyone!",
     },
+    {
+      avatar:
+        "https://img.freepik.com/free-photo/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.jpg",
+      name: "Gaston Cunnow",
+      review:
+        "Amazing product! It changed my life. Can't live without it now. Highly recommended to everyone!",
+    },
   ];
 
   let slideHolder = document.getElementById("slideHolder");
@@ -178,15 +185,28 @@ function testimonials() {
       el: ".swiper-pagination",
       clickable: true,
     },
-    autoplay: { delay: 2000 },
+    autoplay: { delay: 20000000 },
   });
   window.onresize = queryResizer;
   queryResizer();
   function queryResizer() {
-    if (window.innerWidth < 724) swiper.params.slidesPerView = 2;
-    if (window.innerWidth > 501) swiper.params.slidesPerView = 2;
-    if (window.innerWidth > 724) swiper.params.slidesPerView = 2.3;
-    if (window.innerWidth < 501) swiper.params.slidesPerView = 1;
+    if (window.innerWidth >= 1024) {
+      swiper.params.slidesPerView = 5; // Total 5 slides visible
+      swiper.params.centeredSlides = true; // Center the active slide
+      swiper.params.spaceBetween = 20; // Adjust the space between slides (optional)
+    } else if (window.innerWidth >= 724) {
+      swiper.params.slidesPerView = 3.5;
+      swiper.params.centeredSlides = false;
+      swiper.params.spaceBetween = 10; // Adjust the space between slides (optional)
+    } else if (window.innerWidth >= 501) {
+      swiper.params.slidesPerView = 2;
+      swiper.params.centeredSlides = false;
+      swiper.params.spaceBetween = 10; // Adjust the space between slides (optional)
+    } else {
+      swiper.params.slidesPerView = 1;
+      swiper.params.centeredSlides = false;
+      swiper.params.spaceBetween = 10; // Adjust the space between slides (optional)
+    }
     swiper.update();
   }
 }
