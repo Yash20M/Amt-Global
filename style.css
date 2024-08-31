@@ -613,10 +613,13 @@ iconify-icon {
 
 .upc-content-button {
   position: relative;
-  display: inline-block;
-  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 1rem;
+  width: 130px;
   height: 37px;
-  font-size: 14px;
   font-weight: 500;
   margin-left: 5%;
   text-transform: uppercase;
@@ -2571,14 +2574,14 @@ html {
     margin-left: 0;
     width: 12rem;
   }
-  
+
   #slide-b-right-p {
     font-size: 1.8rem;
     color: #00475b;
-}
+  }
 
-#slide-b-right-h2 {
+  #slide-b-right-h2 {
     font-size: 3rem;
     color: #00475b;
-}
+  }
 }
