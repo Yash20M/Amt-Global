@@ -74,7 +74,7 @@ function mainSlider(sliderContainer) {
     dot.addEventListener("click", () => showSlide(index));
   });
 
-  // setInterval(nextSlide, 4000); // Change slide every 4 seconds
+  setInterval(nextSlide, 4000); // Change slide every 4 seconds
 
   showSlide(currentSlide);
 }
@@ -191,7 +191,7 @@ function testimonials() {
   window.onresize = queryResizer;
   queryResizer();
   function queryResizer() {
-    if (window.innerWidth < 724) swiper.params.slidesPerView = 4;
+    if (window.innerWidth < 724) swiper.params.slidesPerView = 5;
     if (window.innerWidth > 501) swiper.params.slidesPerView = 2;
     if (window.innerWidth > 724) swiper.params.slidesPerView = 3.5;
     if (window.innerWidth < 501) swiper.params.slidesPerView = 1;
